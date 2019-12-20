@@ -29,6 +29,7 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 @ConditionalOnProperty(name = "site.controls.register", havingValue = "true", matchIfMissing = true)
 public class RegisterController extends BaseController {
+
 	@Autowired
 	private UserService userService;
 	@Autowired

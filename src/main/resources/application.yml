@@ -1,5 +1,5 @@
 server:
-    port: 8080
+    port: 8082
     use-forward-headers: true
     undertow:
         io-threads: 2
@@ -60,8 +60,8 @@ shiro:
             maxAge: 604800
 logging:
     level:
-        org.springframework: WARN
-        org.hibernate: WARN
+        org.springframework: debug
+        org.hibernate: debug
 
 # site.options.theme: [default|classic]
 site:
@@ -77,11 +77,16 @@ site:
         # 评论开关
         comment: true
     options:
-        theme: classic
-        site_logo: /dist/images/logo/logo.png
-        site_favicon: /dist/images/logo/m.png
+        theme: youth
+        site_logo: /dist/images/logo/logo-new.png
+        site_favicon: /dist/images/logo/favicon.png
         storage_max_width: 800
         storage_limit_size: 2
         editor: markdown
         thumbnail_channel_size: 200x112
         thumbnail_post_size: 360x200
+        storage_scheme: aliyun
+        aliyun_oss_endpoint: oss-cn-beijing.aliyuncs.com
+        aliyun_oss_bucket: shaohua-blog
+        aliyun_oss_key: LTAIV6NT2NdN939S
+        aliyun_oss_secret: Q8VZNMXaOCIhGxLKd5qxoHSW8s4Ol3

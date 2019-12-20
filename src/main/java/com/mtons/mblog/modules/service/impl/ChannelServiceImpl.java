@@ -10,10 +10,9 @@
 package com.mtons.mblog.modules.service.impl;
 
 import com.mtons.mblog.base.lang.Consts;
-import com.mtons.mblog.modules.entity.Post;
+import com.mtons.mblog.modules.entity.Channel;
 import com.mtons.mblog.modules.repository.ChannelRepository;
 import com.mtons.mblog.modules.service.ChannelService;
-import com.mtons.mblog.modules.entity.Channel;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
