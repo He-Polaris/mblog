@@ -1,6 +1,11 @@
 server:
-    port: 8082
-    use-forward-headers: true
+    port: 8080
+    ssl:
+        key-store: 3267867_ddmblog.com.pfx
+        key-store-password: 1xNY2vfY
+#    use-forward-headers: true
+    http2:
+        enabled: true
     undertow:
         io-threads: 2
         worker-threads: 32
@@ -90,3 +95,8 @@ site:
         aliyun_oss_bucket: shaohua-blog
         aliyun_oss_key: LTAIV6NT2NdN939S
         aliyun_oss_secret: Q8VZNMXaOCIhGxLKd5qxoHSW8s4Ol3
+
+custom:
+  server:
+    http:
+      port: 8081
