@@ -63,7 +63,7 @@
 
     <!-- footer -->
     <#include "/youth/inc/footer.ftl"/>
-    <!-- 
+    <!--
     <script type="text/javascript">
         //初始化小人物 需设置属性pluginRootPath: "live2dw/"指明资源跟路径
         L2Dwidget.init({
@@ -89,8 +89,9 @@
             log: !1
         });
     </script>
-     -->
+     <#--&ndash;&gt;-->
 
+-->
 </body>
 </html>
 </#macro>

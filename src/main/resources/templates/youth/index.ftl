@@ -1,6 +1,6 @@
 <#include "/youth/inc/layout.ftl"/>
 <#assign topId = 1 />
-<@layout>
+<@layout "叮当猫">
 <div class="side-top">
     <!-- top -->
         <@contents channelId=topId size=6>
@@ -8,13 +8,13 @@
             <#if  results.content?size gt 0>
         <div class="row banner bg-animation">
             <!-- 幻灯片 轮播图 ↓--->
-            <div class="swipers-slider" >
+            <div class="swipers-slider recommend-red" >
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                 <#list results.content as row>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" id="kbn-zd">
                         <div class="banner-item col-xs-12 col-sm-12 col-md-12">
-                            <div id="kbn-zd" class="index-banner-box"<#if row.thumbnail?? && row.thumbnail?length gt 0> style="background-image:url(<@resource src=row.thumbnail/>)"<#else> style="background-image:url(${base}/dist/images/spinner-overlay.png)"</#if>>
+                            <div  class="index-banner-box"<#if row.thumbnail?? && row.thumbnail?length gt 0> style="background-image:url(<@resource src=row.thumbnail/>)"<#else> style="background-image:url(${base}/dist/images/spinner-overlay.png)"</#if>>
                                 <a class="top" href="${base}/post/${row.id}">
                                     <div class="overlay"></div>
                                     <!--<div class="line"></div>-->
