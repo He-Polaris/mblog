@@ -1,5 +1,5 @@
 server:
-    port: 8080
+    port: 8081
     ssl:
         key-store: 3267867_ddmblog.com.pfx
         key-store-password: 1xNY2vfY
@@ -99,4 +99,4 @@ site:
 custom:
   server:
     http:
-      port: 8081
+      port: 8082

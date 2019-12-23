@@ -8,13 +8,13 @@
             <#if  results.content?size gt 0>
         <div class="row banner bg-animation">
             <!-- 幻灯片 轮播图 ↓--->
-            <div class="swipers-slider">
+            <div class="swipers-slider" >
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                 <#list results.content as row>
                     <div class="swiper-slide">
                         <div class="banner-item col-xs-12 col-sm-12 col-md-12">
-                            <div class="index-banner-box"<#if row.thumbnail?? && row.thumbnail?length gt 0> style="background-image:url(<@resource src=row.thumbnail/>)"<#else> style="background-image:url(${base}/dist/images/spinner-overlay.png)"</#if>>
+                            <div id="kbn-zd" class="index-banner-box"<#if row.thumbnail?? && row.thumbnail?length gt 0> style="background-image:url(<@resource src=row.thumbnail/>)"<#else> style="background-image:url(${base}/dist/images/spinner-overlay.png)"</#if>>
                                 <a class="top" href="${base}/post/${row.id}">
                                     <div class="overlay"></div>
                                     <!--<div class="line"></div>-->
@@ -66,10 +66,10 @@
                 </ul>
             </@contents>
         </div>
-        <div class="text-center">
-            <!-- Pager -->
-            <@utils.pager request.requestURI!"", results, 5/>
-        </div>
+        <#--<div class="text-center">header.ftl-->
+            <#--<!-- Pager &ndash;&gt;-->
+            <#--<@utils.pager request.requestURI!"", results, 5/>-->
+        <#--</div>-->
     </div>
     <div class="col-xs-12 col-md-3 side-right hidden-xs hidden-sm">
         <#include "/youth/inc/right.ftl"/>

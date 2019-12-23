@@ -51,6 +51,10 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         String location = "file:///" + siteOptions.getLocation();
+
+        registry.addResourceHandler("/live2d-widget-master/**")
+                .addResourceLocations("classpath:/templates/youth/live2d-widget-master/");
+
         registry.addResourceHandler("/dist/**")
                 .addResourceLocations("classpath:/static/dist/");
 
