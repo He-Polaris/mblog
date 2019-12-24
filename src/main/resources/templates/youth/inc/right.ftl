@@ -1,4 +1,4 @@
-<div class="panel panel-default widget">
+<div class="panel panel-default widget hot_wz">
     <div class="panel-heading">
         <h3 class="panel-title show-hot">热门文章</h3>
     </div>
@@ -41,7 +41,7 @@
     </div>
 </div>
 <@controls name="comment">
-<div class="panel panel-default widget">
+<div class="panel panel-default widget new-comment">
     <div class="panel-heading">
         <h3 class="panel-title show-comment">最新评论</h3>
     </div>
@@ -67,7 +67,7 @@
     </div>
 </div>
 </@controls>
-<div class="panel panel-default widget">
+<div class="panel panel-default widget new-fb">
     <div class="panel-heading">
         <h3 class="panel-title show-new">最新发布</h3>
     </div>
