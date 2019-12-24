@@ -58,8 +58,8 @@ public abstract class AbstractStorage implements Storage {
     @Override
     public String storeScale(MultipartFile file, String basePath, int width, int height) throws Exception {
         validateFile(file);
-        byte[] bytes = ImageUtils.screenshot(file, width, height);
-        return writeToStore(bytes, basePath, file.getOriginalFilename());
+        //byte[] bytes = ImageUtils.screenshot(file, width, height);
+        return writeToStore(file.getBytes(), basePath, file.getOriginalFilename());
     }
 
     public String writeToStore(byte[] bytes, String src, String originalFilename) throws Exception {
